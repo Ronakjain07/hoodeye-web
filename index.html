@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="shortcut icon"
+      href="./images/hoodeyelogo.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <script
@@ -35,11 +41,8 @@
     <br /><br /><br /><br /><br /><br /><br />
     <div class="content">
       <div class="description">
-        <h1 class="tracking-in-contract-bck">"Hoodeye : Enhancing</h1>
-
-        <h1 class="tracking-in-contract-bck">
-          &nbsp;&nbsp;Neighborhood Safety"
-        </h1>
+        <h1>"Hoodeye : Enhancing</h1>
+        <h1>&nbsp;&nbsp;Neighborhood Safety"</h1>
         <p>
           Hoodeye empowers users with valuable insights into neighborhood safety
           by leveraging officially verified crime data from government
@@ -72,11 +75,15 @@
     </div>
     <section id="aboutus">
       <div class="slidingimage">
-        <img src="./images/ytmobile.avif" alt="" />
+        <video
+          src="./WhatsApp Video 2024-03-12 at 16.29.37_d92d5d6d.mp4"
+          loop
+          autoplay
+        ></video>
       </div>
       <div class="aboutcontent">
+        <h1 style="color: #ff4655; font-size: 40px">About Us</h1>
         <p>
-          <br /><br /><br />
           Welcome to Hoodeye, where your safety is our priority. Hoodeye is an
           innovative application dedicated to empowering users with crucial
           insights into their neighborhood's safety. Leveraging officially
@@ -84,7 +91,7 @@
           ensures a comprehensive view of the safety profile of your intended
           destinations. <br /><br /><br />
         </p>
-        <p style="color: #ff4655">Our Mission :</p>
+        <p style="color: #ff4655"><b>Our Mission :</b></p>
         <p>
           At Hoodeye, our mission is to provide you with the tools and
           information needed to make informed decisions about your safety and
@@ -97,33 +104,29 @@
       <div class="hoodcontent">
         <h1>Why Hoodeye for Neighborhood Safety?</h1>
         <p>
-          Live Location Insights: <br />
-          Hoodeye utilizes advanced technology to detect your location in real
-          time, providing instant safety insights for both familiar and new
-          areas. Stay informed about your neighborhood's security status,
-          whether you're at home or on the go. <br />
-          Past Crime Data for Informed Choices: <br />Wondering about the safety
-          history of your district? Hoodeye delivers a comprehensive overview of
-          past crimes in the area where you reside. This information empowers
-          you to assess the safety of your house location and make choices that
-          align with your security priorities.
-          <br />
-          Safety Assessment for Residential Decisions: <br />
-          Planning a move? Hoodeye assists you in evaluating the safety of a
-          neighborhood before making significant residential decisions. We
-          believe that everyone deserves the right to choose a home in a secure
-          environment, and our safety assessments help you achieve just that.
-          <br />
-          Panic Button for Immediate Assistance: <br />
-          Your safety is our utmost concern. Hoodeye features a panic button
-          that, when pressed, instantly shares your location and provides
-          details of nearby police stations. This ensures swift assistance in
-          case you witness or experience any sort of crime, giving you the
-          support you need when it matters most.
+          <b>Live Location Insights:</b> <br />
+          Hoodeye employs advanced technology for real-time location detection,
+          delivering instant safety insights for both familiar and new areas,
+          ensuring security awareness at home or on the go. <br /><br />
+          <b>Past Crime Data for Informed Choices:</b><br />Hoodeye provides a
+          detailed history of past crimes in your district, empowering you to
+          assess your home's safety and make informed security decisions.
+          <br /><br />
+          <b>Safety Assessment for Residential Decisions:</b> <br />
+          Hoodeye helps assess neighborhood safety for informed residential
+          decisions, ensuring everyone can choose a secure home environment.
+          <br /><br />
+          <b>Panic Button for Immediate Assistance:</b> <br />
+          Hoodeye prioritizes your safety with a panic button, instantly sharing
+          your location and nearby police details for swift assistance in case
+          of any crime, ensuring support when you need it most.
         </p>
       </div>
       <div class="contentimage img2">
-        <img src="./images/ytmobile.avif" alt="" />
+        <img
+          src="./WhatsApp Image 2024-03-12 at 16.33.38_9cea5f97.jpg"
+          alt=""
+        />
       </div>
     </section>
     <div id="contact-us">
@@ -138,6 +141,7 @@
               name="name"
               autocomplete="off"
               class="input"
+              id="name"
             />
             <label class="user-label">Name</label>
           </div>
@@ -149,6 +153,7 @@
               name="email"
               autocomplete="off"
               class="input"
+              id="mail"
             />
             <label class="user-label">Email Address</label>
           </div>
@@ -161,23 +166,13 @@
               autocomplete="off"
               cols="30"
               rows="10"
+              id="message"
             ></textarea>
             <label class="user-label">Message</label>
           </div>
           <br />
           <button type="submit" name="submit" class="submit">Submit</button>
-          <script>
-            const scriptURL =
-              "https://script.google.com/macros/s/AKfycbxXnjaVEVlrYfXt0X43NxMmUjrHGHi7aZMt8N7F0RcGvBAcBvtzC0Y8jtQNK4qpEM8nnQ/exec";
-            const form = document.forms["submit-to-google-sheet"];
-
-            form.addEventListener("submit", (e) => {
-              e.preventDefault();
-              fetch(scriptURL, { method: "POST", body: new FormData(form) })
-                .then((response) => console.log("Success!", response))
-                .catch((error) => console.error("Error!", error.message));
-            });
-          </script>
+          <script></script>
         </form>
       </div>
       <br />
